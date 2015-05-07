@@ -1,3 +1,4 @@
 .DS_Store
 .localrc
 .gitconfig
+home/.vim/bundle
