@@ -37,6 +37,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'chriskempson/base16-vim'
 Plugin 'bling/vim-airline'
+Plugin 'Yggdroot/indentLine'
 
 " ----- Vim as a programmer's text editor -----------------------------
 Plugin 'scrooloose/nerdtree'
@@ -171,6 +172,8 @@ let g:jsdoc_allow_input_prompt = 1
 let g:jsdoc_allow_shorthand = 1
 
 let g:ctrlp_working_path_mode = 0
+
+let g:indentLine_char = '┆'
 
 " ----- jistr/vim-nerdtree-tabs -----
 " Open/close NERDTree Tabs with \t
