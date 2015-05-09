@@ -57,6 +57,8 @@ Plugin 'tpope/vim-fugitive'
 " ----- Other text editing features -----------------------------------
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-repeat'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'vim-scripts/ZoomWin'
 
 " ----- man pages, tmux -----------------------------------------------
 Plugin 'jez/vim-superman'
