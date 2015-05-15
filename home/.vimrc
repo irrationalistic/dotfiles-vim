@@ -139,6 +139,9 @@ set guioptions-=L
 set guioptions-=T
 set guioptions-=r
 
+set wrap
+set linebreak
+
 " ----- Plugin-Specific Settings --------------------------------------
 
 " ----- altercation/vim-colors-solarized settings -----
@@ -179,6 +182,7 @@ let g:jsdoc_allow_input_prompt = 1
 let g:jsdoc_allow_shorthand = 1
 
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 let g:indentLine_char = '┆'
 
