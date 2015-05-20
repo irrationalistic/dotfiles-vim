@@ -38,6 +38,7 @@ Plugin 'tomasr/molokai'
 Plugin 'chriskempson/base16-vim'
 Plugin 'bling/vim-airline'
 Plugin 'Yggdroot/indentLine'
+Plugin 'yosiat/oceanic-next-vim'
 
 " ----- Vim as a programmer's text editor -----------------------------
 Plugin 'scrooloose/nerdtree'
@@ -186,6 +187,9 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 let g:indentLine_char = '┆'
 
+" ----- mxw/jsx ----
+let g:jsx_ext_required = 0
+
 " ----- jistr/vim-nerdtree-tabs -----
 " Open/close NERDTree Tabs with \t
 nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
@@ -201,6 +205,7 @@ augroup mySyntastic
   au FileType tex let b:syntastic_mode = "passive"
 augroup END
 
+let g:syntastic_javascript_checkers = ['eslint']
 
 " ----- xolox/vim-easytags settings -----
 " Where to look for tags files
