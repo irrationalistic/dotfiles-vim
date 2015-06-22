@@ -25,7 +25,7 @@ vnoremap <silent> # :call VisualSelection('b')<CR>
 
 filetype off
 
-set guifont=Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline:h14
+set guifont=Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline:h12
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
