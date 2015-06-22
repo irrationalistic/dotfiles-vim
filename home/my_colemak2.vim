@@ -1,33 +1,24 @@
-" colemak rebind
-" map n gj|nnoremap n gj
-" map e gk
-" nnoremap i l|xnoremap i l
-" 
-" " bump n to c-k and N to c-m
-" nnoremap <c-u> n|xnoremap <c-u> n|onoremap <c-u> n|
-" nnoremap <c-y> N|xnoremap <c-y> N|onoremap <c-y> N|
-" 
-" " use k for insert/command
-" imap kk <Esc>
-" noremap k i
-" noremap K I
-" 
-" " colemak u
-" noremap l u
-" noremap L U
-" 
-" " insert quick movement
-" " imap <c-h> <left>
-" " imap <c-n> <down>
-" " imap <c-e> <up>
-" " imap <c-i> <right>
-" 
-" " window movement
-" nnoremap <c-w>n <c-w>j
-" nnoremap <c-w>i <c-w>l
-" nnoremap <c-w>e <c-w>k
-" 
-" " quick window move
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" GUI Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set background=dark
+
+colorscheme molokai
+if has("gui_macvim")
+  colorscheme base16-eighties
+endif
+
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+" Map leader
+let mapleader = ","
+let g:mapleader = ","
+
+" Fast saving
+nmap <leader>w :w!<cr>
+
+" Quick window move
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -56,7 +47,7 @@ endif
 imap kk <Esc>
 
 set nohlsearch
-              
+
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
 
@@ -69,10 +60,16 @@ let g:NERDTreeMapPreview="<F4>"
 
 noremap <leader>b :CtrlPBuffer<CR>
 
-noremap YY "+y<CR>
-noremap P "+gP<CR>
-noremap XX "+x<CR>
 
 "" Vmap for maintain Visual Mode after shifting > and <
 vmap < <gv
 vmap > >gv
+
+"" Split
+noremap <Leader>h :<C-u>split<CR>
+noremap <Leader>v :<C-u>vsplit<CR>
+
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
