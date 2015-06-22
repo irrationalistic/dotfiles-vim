@@ -66,3 +66,13 @@ silent! nmap <C-p> :NERDTreeToggle<CR>
 silent! map <F3> :NERDTreeFind<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
+
+noremap <leader>b :CtrlPBuffer<CR>
+
+noremap YY "+y<CR>
+noremap P "+gP<CR>
+noremap XX "+x<CR>
+
+"" Vmap for maintain Visual Mode after shifting > and <
+vmap < <gv
+vmap > >gv

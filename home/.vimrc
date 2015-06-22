@@ -143,6 +143,10 @@ set guioptions-=r
 set wrap
 set linebreak
 
+"" Disable the blinking cursor.
+set gcr=a:blinkon0
+set scrolloff=3
+
 " ----- Plugin-Specific Settings --------------------------------------
 
 " ----- altercation/vim-colors-solarized settings -----
