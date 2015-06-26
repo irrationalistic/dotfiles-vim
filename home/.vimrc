@@ -1,3 +1,7 @@
+" Map leader
+let mapleader = ","
+let g:mapleader = ","
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Core settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -113,6 +117,7 @@ Plugin 'elzr/vim-json'
 Plugin 'mxw/vim-jsx'
 Plugin 'elentok/plaintasks.vim'
 Plugin 'moll/vim-node'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " ---- Extras/Advanced plugins ----------------------------------------
 " Automatically insert the closing HTML tag
@@ -145,6 +150,14 @@ augroup vimrc-remember-cursor-position
   autocmd!
   autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 augroup END
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+au BufNewFile,BufRead *.hbs set filetype=mustache
+au BufNewFile,BufReadPost *.jade set filetype=jade
+au BufNewFile,BufReadPost *.coffee set filetype=coffee
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Settings

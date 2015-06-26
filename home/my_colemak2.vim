@@ -11,9 +11,6 @@ endif
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
-" Map leader
-let mapleader = ","
-let g:mapleader = ","
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -53,12 +50,13 @@ map <silent> <leader><cr> :noh<cr>
 
 " this nerdtree mapping interferes with movement
 " let g:NERDTreeMapOpenExpl = "j"
-silent! nmap <C-p> :NERDTreeToggle<CR>
+"silent! nmap <C-p> :NERDTreeToggle<CR>
 silent! map <F3> :NERDTreeFind<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
 
 noremap <leader>b :CtrlPBuffer<CR>
+silent! nmap <C-p> :CtrlP<CR>
 
 
 "" Vmap for maintain Visual Mode after shifting > and <
