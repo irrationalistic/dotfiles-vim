@@ -1,15 +1,20 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GUI Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let base16colorspace=256 " Access colors present in 256 colorspace
+set t_Co=256 " 256 color mode
 set background=dark
+"colorscheme molokai
+"if has("gui_macvim")
+colorscheme base16-eighties
+"endif
 
-colorscheme molokai
-if has("gui_macvim")
-  colorscheme base16-eighties
+if $TERM_PROGRAM =~ "iTerm"
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+  let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 endif
-
-let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 
 " Fast saving
@@ -42,6 +47,7 @@ if has("mac") || has("macunix")
 endif
 
 imap kk <Esc>
+map Y y$
 
 set nohlsearch
 

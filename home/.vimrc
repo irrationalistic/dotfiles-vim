@@ -50,6 +50,8 @@ set gcr=a:blinkon0
 vnoremap <silent> * :call VisualSelection('f')<CR>
 vnoremap <silent> # :call VisualSelection('b')<CR>
 
+" Suffixes for gf
+set suffixesadd+=.js,.coffee,.jsx,.csx,.cjsx
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GUI Settings
@@ -76,6 +78,7 @@ Plugin 'yosiat/oceanic-next-vim'
 " ----- Vim as a programmer's text editor -----------------------------
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'vim-scripts/copypath.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
@@ -87,6 +90,7 @@ Plugin 'vim-scripts/argtextobj.vim'
 " ----- Snippets ------------------------------------------------------
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+"Plugin 'Valloric/YouCompleteMe'
 
 " ----- Working with Git ----------------------------------------------
 Plugin 'airblade/vim-gitgutter'
@@ -227,6 +231,10 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
+" ----- YouCompleteMe -------------------------------------
+"let g:ycm_complete_in_comments = 1 
+"let g:ycm_seed_identifiers_with_syntax = 1 
+"let g:ycm_collect_identifiers_from_comments_and_strings = 1 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " User Files
