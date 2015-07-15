@@ -26,7 +26,6 @@ set showcmd
 set incsearch
 set hlsearch
 
-syntax on
 
 set mouse=a
 
@@ -90,7 +89,7 @@ Plugin 'vim-scripts/argtextobj.vim'
 " ----- Snippets ------------------------------------------------------
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-"Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 " ----- Working with Git ----------------------------------------------
 Plugin 'airblade/vim-gitgutter'
@@ -144,6 +143,7 @@ Plugin 'terryma/vim-multiple-cursors'
 call vundle#end()
 
 filetype plugin indent on
+syntax on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
@@ -159,9 +159,9 @@ augroup END
 " General Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-au BufNewFile,BufRead *.hbs set filetype=mustache
-au BufNewFile,BufReadPost *.jade set filetype=jade
-au BufNewFile,BufReadPost *.coffee set filetype=coffee
+" au BufNewFile,BufRead *.hbs set filetype=mustache
+" au BufNewFile,BufReadPost *.jade set filetype=jade
+" au BufNewFile,BufReadPost *.coffee set filetype=coffee
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Settings
@@ -227,14 +227,18 @@ augroup mydelimitMate
 augroup END
 
 " ----- Snippets -----
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+ let g:ycm_key_list_previous_completion=['<Up>']
+ let g:UltiSnipsExpandTrigger="<c-e>"
+ let g:UltiSnipsListSnippets="<c-l>"
+ " If you want :UltiSnipsEdit to split your window.
+ let g:UltiSnipsEditSplit="vertical"
 " ----- YouCompleteMe -------------------------------------
-"let g:ycm_complete_in_comments = 1 
-"let g:ycm_seed_identifiers_with_syntax = 1 
-"let g:ycm_collect_identifiers_from_comments_and_strings = 1 
+" let g:ycm_complete_in_comments = 1 
+" let g:ycm_seed_identifiers_with_syntax = 1 
+" let g:ycm_collect_identifiers_from_comments_and_strings = 1 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " User Files
