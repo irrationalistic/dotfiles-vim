@@ -21,11 +21,10 @@ endif
 nmap <leader>w :w!<cr>
 
 " Quick window move
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-
+map <leader><leader>h <C-w>h
+map <leader><leader>j <C-w>j
+map <leader><leader>k <C-w>k
+map <leader><leader>l <C-w>l
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
@@ -70,8 +69,8 @@ vmap < <gv
 vmap > >gv
 
 "" Split
-noremap <Leader>h :<C-u>split<CR>
-noremap <Leader>v :<C-u>vsplit<CR>
+noremap <Leader>sh :<C-u>split<CR>
+noremap <Leader>sv :<C-u>vsplit<CR>
 
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
