@@ -191,6 +191,7 @@ let g:airline#extensions#branch#enabled = 1
 " ----- JSDoc ---------------------------------------------------------
 let g:jsdoc_allow_input_prompt = 1
 let g:jsdoc_allow_shorthand = 1
+nmap <silent> <C-l> <Plug>(jsdoc)
 
 " ----- CTRL-P --------------------------------------------------------
 let g:ctrlp_working_path_mode = 0
@@ -255,5 +256,5 @@ augroup END
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " User Files
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source ~/my_colemak2.vim
+source ~/.vimrc.local
 

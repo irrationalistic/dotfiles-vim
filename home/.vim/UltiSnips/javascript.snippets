@@ -26,3 +26,21 @@ endsnippet
 snippet clv "Console Log Variable" b
 console.log('$1:', ${1:variable});
 endsnippet
+
+snippet f "Function callback"
+function($1) {
+	${VISUAL}$0
+}
+endsnippet
+
+snippet f; "Function variable"
+function($1) {
+	${VISUAL}$0
+};
+endsnippet
+
+snippet f, "Function argument"
+function($1) {
+	${VISUAL}$0
+},
+endsnippet
