@@ -97,6 +97,7 @@ Plugin 'tpope/vim-fugitive'
 
 " ----- Other text editing features -----------------------------------
 Plugin 'Raimondi/delimitMate'
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-repeat'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'vim-scripts/ZoomWin'
@@ -105,7 +106,6 @@ Plugin 'tpope/vim-surround'
 
 " ----- man pages, tmux -----------------------------------------------
 Plugin 'jez/vim-superman'
-Plugin 'christoomey/vim-tmux-navigator'
 
 " ----- Syntax plugins ------------------------------------------------
 Plugin 'jez/vim-c0'
@@ -118,9 +118,11 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'elzr/vim-json'
 Plugin 'mxw/vim-jsx'
-Plugin 'elentok/plaintasks.vim'
+"Plugin 'elentok/plaintasks.vim'
 Plugin 'moll/vim-node'
 Plugin 'mustache/vim-mustache-handlebars'
+"Plugin 'tasks.vim'
+Plugin 'irrationalistic/vim-tasks'
 
 " ---- Extras/Advanced plugins ----------------------------------------
 " Automatically insert the closing HTML tag

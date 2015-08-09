@@ -2,6 +2,16 @@
 " GUI Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"let g:TasksMarkerBase = '[ ]'
+"let g:TasksMarkerDone = '[x]'
+"let g:TasksMarkerCancelled = '[-]'
+"let g:TasksMarkerBase = '-'
+"let g:TasksMarkerDone = '-'
+"let g:TasksMarkerCancelled = '-'
+"let g:TasksDateFormat = '%Y'
+"let g:TasksArchiveSeparator = '-----'
+"let g:TasksAttributeMarker = '#'
+
 let base16colorspace=256 " Access colors present in 256 colorspace
 set t_Co=256 " 256 color mode
 set background=dark
